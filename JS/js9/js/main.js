@@ -11,7 +11,6 @@ if (!jogo) {
     }
 }
 jogo = true
-//TODO: melhorar o console.log, criar sistema para caso o jogador recuse
 if (jogo) {
     //0 = pedra, 1 = papel 2 = tesoura
     computador = Math.floor(Math.random() * 3)
