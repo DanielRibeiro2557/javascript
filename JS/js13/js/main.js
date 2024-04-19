@@ -1,58 +1,42 @@
-let nome = "Daniel"
-for (let i = 0; i < nome.length; i++) {
-    console.log(nome.charAt(i));
-    
+const view1 = document.getElementById("view1")//usar "" ao invez de ''
+console.log(view1)
+const view2 = document.querySelector("#view2")
+console.log(view2)
+view1.style.display = 'flex'
+view2.style.display = 'none'
+
+const views = document.getElementsByClassName("view")
+console.log(views);
+
+const sameViews = document.querySelectorAll('.view')
+console.log(sameViews);
+
+const divs = view1.querySelectorAll("div")
+console.log(divs)
+const sameDivs = view1.getElementsByTagName("div")
+console.log(sameDivs)
+
+const evenDivs = view1.querySelectorAll("div:nth-of-type(2n)")
+console.log(evenDivs)
+
+function click(){
+    if(evenDivs[0].style.backgroundColor == 'darkblue'){
+        for (let i = 0; i < evenDivs.length; i++){
+            evenDivs[i].style.backgroundColor = 'black'
+        }
+    } else {
+        
+    for (let i = 0; i < evenDivs.length; i++){
+        evenDivs[i].style.backgroundColor = 'darkblue'
+    }
+    }
 }
 
+const navText = document.querySelector("header>h1")
+console.log(navText)
+navText.textContent = "Olá mundo!"
+const navbar = document.querySelector("header")
+navbar.innerHTML = `<h1>Olá</h1> <p>isso deve alinhar?<p/>`
+navbar.style.color = '#ffffff'
+navbar.querySelector("p").style.marginLeft = "5px"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-strings
-variavel.lenght: numero de carateres de uma string
-variavel.
-
-variavel.charactetAt(number): qual caractere esta na posição mensionada
-
-variavel.indexOf(string): qual a posição do(s) caractere(s) na string
-
-variavel.lastIndexOf(string): posição da ultima ocorrencia do(s) caracteres
-
-variavel.slice(number1, number2): mostra os caracteres entre as posições
-
-variavel.toUpperCase(): transforma as letras da variavel em maiusculas
-
-variavel.toLowerCase(): transforma as letras da variavel em minusculas
-
-variavel.includes(string): verifica se na variavel existe em alguma parte essa string
-
-variavel.split(string): recorta o pedaço da string e faz um array com restante
-
-*/
-
-/*
-Math
-    trunc: remove casas decimais
-    round: aproxima o valor
-    ceil: remove as casas decimais e soma 1(ou simplesmente arredodna sempre pra cima)
-    floor: remove as casas decimais e subtrai 1(ou simplesmente arredodna sempre pra baixo)
-    pow: primeiro numero elevado ao segundo
-    min: mostra o menor numero
-    max: oposto do 
-
-*/
