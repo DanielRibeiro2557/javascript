@@ -1,16 +1,4 @@
-let ara = []
-//pedra
-ara[0] = []
-ara[0][0] = 0
-ara[0][1] = 'pedra'
-//papel
-ara[1] = []
-ara[1][0] = 1
-ara[1][1] = 'papel'
-//tesoura
-ara[2] = []
-ara[2][0] = 2
-ara[2][1] = 'tesoura'
+let ara = [[0, 'pedra'], [1, 'papel'], [2, 'tesoura']]
 
 function jogada(j, c, jo) {
     let p;
